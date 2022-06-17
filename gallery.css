@@ -1,0 +1,44 @@
+.container {  
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+    "topper"
+    "guts"
+    "footer";
+    justify-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-wrap: normal;
+    }
+
+.topper{
+    grid-area: topper;
+    width: 576px;
+}
+
+.logo{
+    width: 576px;
+}
+
+.guts{
+    grid-area: guts;
+    overflow-wrap: normal;
+}
+
+.biker{
+    height: 25%;
+    width: 576px;
+}
+
+.article{
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.footer{
+grid-area: footer;
+background-color: black;
+width: 576px;
+color: white;
+}
