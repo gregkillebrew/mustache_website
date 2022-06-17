@@ -1,0 +1,91 @@
+
+  .body{
+    background-color: aqua;
+  }
+
+.container {  
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "middle middle middle"
+  "samples samples samples"
+  "footer footer footer";
+  justify-content: space-evenly;
+}
+
+.header{
+  background-color: white;
+  border: solid;
+  align-items: center;
+  grid-area: header;
+  height: 350px;
+}
+
+.logo{
+  width: 55%;
+   display: block;
+}
+
+.nav{
+  align-items: center;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.middle{
+  grid-area: middle;
+  height: 50%;
+  position: inherit;
+  
+  }
+
+.footer{
+  background-color: black;
+  grid-area: footer;
+  color: white;
+}
+
+.figure{
+  border: solid;
+  grid-area: figure;
+}
+
+
+
+.samples{
+  grid-area: samples;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: row;
+
+}
+
+.president{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.hipster{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.biker{
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
