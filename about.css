@@ -16,12 +16,13 @@
 
 .topper{
     grid-area: topper;
-    width: 576px;
-}
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
 
-.logo{
-    width: 576px;
-}
 
 .guts{
     grid-area: guts;
@@ -29,11 +30,12 @@
 }
 
 .biker{
-    height: 25%;
+    height: 35%;
     width: 576px;
 }
 
 .article{
+    grid-area: article;
     text-align: center;
     word-wrap: break-word;
 }

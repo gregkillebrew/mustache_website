@@ -1,9 +1,20 @@
 .container {  
     display: grid;
-    gap: 25px;
+    /* grid-template-rows: 400px 1fr .75fr 1fr .75fr 1fr .75fr 1fr .75fr 1fr .75fr 1fr .75fr 400px ; */
     grid-template-areas:
     "topper"
-    "guts"
+    "image1"
+    "desc1"
+    "image2"
+    "desc2"
+    "image3"
+    "desc3"
+    "image4"
+    "desc4"
+    "image5"
+    "desc5"
+    "image6"
+    "desc6"
     "footer";
     justify-items: center;
     text-align: center;
@@ -14,31 +25,100 @@
 
 .topper{
     grid-area: topper;
-    width: 576px;
-}
-
-.logo{
-    width: 576px;
-}
-
-.guts{
-    grid-area: guts;
-    overflow-wrap: normal;
-}
-
-.biker{
-    height: 25%;
-    width: 576px;
-}
-
-.article{
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    word-wrap: break-word;
+    font-size: 30px;
+    width: 0 auto;
+}
+
+/* .gallery{
+    grid-area: gallery;
+    width: 0 auto;
+    height: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+} */
+
+
+.image1{
+    grid-area: image1;
+    height: 35%;
+    width: 35%;
+}
+.desc1{
+    grid-area: desc1;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.image2{
+    grid-area: image2;
+    height: 35%;
+    width: 35%;
+}
+.desc2{
+    grid-area: desc2;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.image3{
+    grid-area: image3;
+    height: 35%;
+    width: 35%;
+}
+.desc3{
+    grid-area: desc3;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.image4{
+    grid-area: image4;
+    height: 35%;
+    width: 35%;
+}
+.desc4{
+    grid-area: desc4;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.image5{
+    grid-area: image5;
+    height: 35%;
+    width: 35%;
+}
+.desc5{
+    grid-area: desc5;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
+}
+
+.image6{
+    grid-area: image6;
+    height: 35%;
+    width: 35%;
+}
+.desc6{
+    grid-area: desc6;
+    text-align: center;
+    font-weight: 600;
+    font-size: x-large;
 }
 
 .footer{
-grid-area: footer;
-background-color: black;
-width: 576px;
-color: white;
-}
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    width: 600px;
+    }

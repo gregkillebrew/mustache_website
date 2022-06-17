@@ -1,0 +1,32 @@
+.topper{
+    grid-area: topper;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    width: 0 auto;
+}
+
+
+.blog_post{
+    width: 50px ;
+    height: 50px ;
+}
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    font-size: larger;
+    width: 600px;
+    }

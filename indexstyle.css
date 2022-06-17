@@ -1,8 +1,9 @@
-/* @media (min-width: 576px){ */
-
 .container {  
   display: grid;
-  gap: 25px;
+  gap: 1%;
+  /* grid-template-rows: .35fr 1fr .75fr .1fr 1fr 20px 1fr 20px .20fr ;
+  grid-template-columns: 576px ; */
+  /* gap: 25px; */
   grid-template-areas:
   "topper"
   "middle"
@@ -21,56 +22,201 @@
 
 .topper{
   grid-area: topper;
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
 }
-.nav{
-  
-}
+
 .middle{
   grid-area: middle;
   background-image: url("images/lego.jpg");
+  background-size: cover;
+  /* min-height: 300px; */
   background-position: 41% 40%;
-  width: 576px;
-  height: 1000px;
+  /* margin: 0 auto; */
+  /* height: 1000px; */
   justify-content: center;
   align-items: center;
   color: white;
-  text-align: center;  
+  text-align: center;
+  font-size: xx-large;  
 }
 .president{
   grid-area: president;
-  height: 30%;
-  width: 30%;
+  /* height: 90%; */
+  width: 90%;
   align-items: center;
 }
 .prez_pic{
   grid-area: prez_pic;
   text-align: center;
   font-weight: 600;
+  font-size: xxx-large;
 }
 .hipster{
   grid-area: hipster;
-  height: 30%;
-  width: 30%;
+  /* height: 90%; */
+  width: 90%;
 }
 .hipster_pic{
   grid-area: hipster_pic;
   text-align: center;
   font-weight: 600;
+  font-size: xxx-large;
 }
 .biker{
   grid-area: biker;
-  height: 30%;
-  width: 30%;
+  /* height: 90%; */
+  width: 90%;
 }
 .biker_pic{
   grid-area: biker_pic;
   text-align: center;
   font-weight: 600;
+  font-size: xxx-large;
 }
 .footer{
   grid-area: footer;
   background-color: black;
-  width: 576px;
+  width: 100%;
   color: white;
 }
+
+
+@media(min-width:768px){
+
+ .container{ 
+  grid-template-areas:
+  "topper topper topper"
+  "middle middle middle"
+  "president hipster biker"
+  "prez_pic hipster_pic biker_pic"
+  "footer footer footer";
+  }  
+
+ .footer{
+  display: flex;
+ }
+
+ .social-media{
+  display: flex;
+  margin-left: auto;
+  gap: 3%;
+
+ }
+
+
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* .container {  
+  display: grid;
+  grid-template-rows: .35fr 1fr 1fr .10fr .20fr ;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-areas:
+  "topper topper topper"
+  "middle middle middle"
+  "president hipster biker"
+  "prez_pic hipster_pic biker_pic"
+  "footer footer footer";
+  gap: 20px;
+  justify-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center; 
+  }
+
+.topper{
+  grid-area: topper ;
+  width: 0 auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 50px;
+}
+
+.middle{
+  grid-area: middle;
+  background-image: url("images/lego.jpg");
+  background-position: 41% 40%;
+  width: 0 auto;
+  height: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 50px;  
+}
+.president{
+  grid-area: president;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  padding-top: 25px;
+}
+.prez_pic{
+  grid-area: prez_pic;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.hipster{
+  grid-area: hipster;
+  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+}
+.hipster_pic{
+  grid-area: hipster_pic;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.biker{
+  grid-area: biker;
+  height: 100%;
+  width: 100%;
+  padding-top: 25px;
+}
+.biker_pic{
+  grid-area: biker_pic;
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+}
+.footer{
+  grid-area: footer;
+  background-color: black;
+  width: 0 auto;
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}  */
