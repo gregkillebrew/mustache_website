@@ -1,32 +1,131 @@
+.container {  
+    display: grid;
+    grid-template-areas:
+    "topper"
+    "blog_post"
+    "image1"
+    "blog_post2"
+    "image2"
+    "footer";
+    justify-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow-wrap: normal;
+    }
+
 .topper{
     grid-area: topper;
+    width: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 30px;
-    width: 0 auto;
+  }
+
+.image1{
+    grid-area: image1;
+    width: 55%;
 }
-
-
 .blog_post{
-    width: 50px ;
-    height: 50px ;
+    grid-area: blog_post;
+    font-weight: 600;
+    font-size: x-large;
 }
 
-
-
-
-
-
-
-
-
-
+.image2{
+    grid-area: image2;
+    width: 55%;
+}
+.blog_post2{
+    grid-area: blog_post2;
+    font-weight: 600;
+    font-size: x-large;
+}
 
 .footer{
     grid-area: footer;
     background-color: black;
+    width: 100%;
     color: white;
-    font-size: larger;
-    width: 600px;
+  }
+
+
+
+
+    @media(min-width:768px){
+        
+        .image1{
+            grid-area: image1;
+        }
+        .image2{
+            grid-area: image2;
+        }
+        .desc1{
+            grid-area: desc1;
+            font-weight: 600;
+            font-size: x-large;
+        }
+        .desc2{
+            grid-area: desc2;
+            font-weight: 600;
+            font-size: x-large;
+        }
+
+        .blog_post{
+            grid-template-areas: 
+            "image1 desc1";
+        }
+
+        .blog_post2{
+            grid-template-areas: 
+            "image2 desc2";
+        }
+
+        .container{ 
+        display: grid;
+        grid-template-areas:
+        "topper topper"
+        "blog_post"
+        "blog_post2"
+        "footer footer";
+        }
+
+        
+
+
+
+        /* .image1{
+            grid-area: image1;
+            width: 50%;
+        }
+        .blog_post{
+            grid-area: blog_post;
+            text-align: center;
+            font-weight: 600;
+            font-size: xx-large;
+        } */
+        
+        /* .image2{
+            grid-area: image2;
+            width: 50%;
+        }
+        .blog_post2{
+            grid-area: blog_post2;
+            text-align: center;
+            font-weight: 600;
+            font-size: xx-large;
+        } */
+
+       
+        .footer{
+         display: flex;
+        }
+       
+        .social-media{
+         display: flex;
+         margin-left: auto;
+         gap: 3%;
+       
+        }
     }

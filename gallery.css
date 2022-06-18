@@ -25,27 +25,15 @@
 
 .topper{
     grid-area: topper;
+    width: 0 auto;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 30px;
-    width: 0 auto;
-}
-
-/* .gallery{
-    grid-area: gallery;
-    width: 0 auto;
-    height: 0 auto;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-} */
-
+  }
 
 .image1{
     grid-area: image1;
-    height: 35%;
     width: 35%;
 }
 .desc1{
@@ -57,7 +45,6 @@
 
 .image2{
     grid-area: image2;
-    height: 35%;
     width: 35%;
 }
 .desc2{
@@ -69,7 +56,6 @@
 
 .image3{
     grid-area: image3;
-    height: 35%;
     width: 35%;
 }
 .desc3{
@@ -81,7 +67,6 @@
 
 .image4{
     grid-area: image4;
-    height: 35%;
     width: 35%;
 }
 .desc4{
@@ -93,7 +78,6 @@
 
 .image5{
     grid-area: image5;
-    height: 35%;
     width: 35%;
 }
 .desc5{
@@ -105,7 +89,6 @@
 
 .image6{
     grid-area: image6;
-    height: 35%;
     width: 35%;
 }
 .desc6{
@@ -118,7 +101,102 @@
 .footer{
     grid-area: footer;
     background-color: black;
+    width: 100%;
     color: white;
-    font-size: larger;
-    width: 600px;
+  }
+
+
+
+
+    @media(min-width:768px){
+
+        .container{ 
+        display: flex grid;
+        grid-template-areas:
+        "topper topper"
+        "image1 desc1"
+        "desc2 image2"
+        "image3 desc3"
+        "desc4 image4"
+        "image5 desc5"
+        "desc6 image6"
+        "footer footer";
+        }
+
+        .image1{
+            grid-area: image1;
+            width: 50%;
+        }
+        .desc1{
+            grid-area: desc1;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+        
+        .image2{
+            grid-area: image2;
+            width: 50%;
+        }
+        .desc2{
+            grid-area: desc2;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+        
+        .image3{
+            grid-area: image3;
+            width: 50%;
+        }
+        .desc3{
+            grid-area: desc3;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+        
+        .image4{
+            grid-area: image4;
+            width: 50%;
+        }
+        .desc4{
+            grid-area: desc4;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+        
+        .image5{
+            grid-area: image5;
+            width: 50%;
+        }
+        .desc5{
+            grid-area: desc5;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+        
+        .image6{
+            grid-area: image6;
+            width: %;
+        }
+        .desc6{
+            grid-area: desc6;
+            text-align: center;
+            font-weight: 600;
+            font-size: xxx-large;
+        }
+       
+        .footer{
+         display: flex;
+        }
+       
+        .social-media{
+         display: flex;
+         margin-left: auto;
+         gap: 3%;
+       
+        }
     }

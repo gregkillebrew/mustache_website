@@ -4,9 +4,112 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact_Us</title>
 </head>
 <body>
-    //FIND FORM CODE I DID EARLEIR//
+    <div class="container">
+        <div class="topper">
+            <img class="logo" src="images/mustache-712591_960_720.jpg"><a href="index.html"> 
+            </a>
+            <div class="nav">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <div>
+              <div class="Name_Box">
+              <h3>Name</h3>
+              <label for="name"></label>
+              <input type="text" name="name" id="name" >
+              </div>
+          </div>
+      
+          <div>
+            <div class="Email_Box">
+              <h3>Email</h3>
+            <label for="email"></label>
+            <input type="email" name="email" id="email" >
+            </div>
+          </div>
+        
+          <div>
+            <div class="how_hear"> 
+              <h3>How did you hear about me?</h3>
+              <label for="Classmate">Classmate</label>
+              <input type="radio" name="How" id="Classmate" value="Classmate">
+              <div>
+              <label for="Resume Submission">Resume Submission</label>
+              <input type="radio" name="How" id="Resume Submission" value="Resume Submission">
+            </div>
+            <div>
+              <label for="LinkedIn">LinkedIn</label>
+              <input type="radio" name="How" id="LinkedIn" value="LinkedIn">
+            </div>
+            <div>
+              <label for="Coding Academy Rec">Coding Academy Rec</label>
+              <input type="radio" name="How" id="Coding Academy Rec" value="Coding Academy Rec">
+            </div>
+      
+            <div>
+              <label for="Other">Other</label>
+              <input type="radio" name="How" id="Other" value="Other">
+              <label for="Other">Please elaborate...</label>
+              <textarea id="Other" name="Other"></textarea>
+            </div>
+          </div>
+      
+          <div>
+            <div class="Comment_Box">
+              <label for="Comment">Comments</label>
+              <input type="textarea" minlength="20" maxlength="500"> 
+            </div>
+          </div>
+         
+          <div>
+            <div class="Yes_No">
+              <h3>Would you like to be contacted back?</h3>
+              <label for="Yes">Yes</label>
+              <input type="radio" name="Contact_Back" id="yes" value="yes">
+              <label for="No">No</label>
+              <input type="radio" name="Contact_Back" id="No" value="No">
+            </div>
+          </div>
+      
+          <div>
+            <div class="Birthday_Box">
+              <h3>Please leave your Birthday if you'd like a Birthday Wish!</h3>
+              <label for="birthday"></label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+          </div>
+      
+          <button type="reset">Reset</button>
+          <button type="submit">Submit</button>
+      
+          <div>
+            <input type="checkbox">
+            
+          </div>
+        </form>
+
+        <div class="footer">
+            <p>Copyright 2022 by Killebrew Inc. All rights reserved.</p>
+            <div class="social-media">
+                <p><a href="twitter.com">Twitter</a></p>
+                <p><a href="facebook.com">Facebook</a></p>
+                <p><a href="instagram.com">Instagram</a></p>
+            </div>
+                       
+        </div>
+
+
+    </div>
+    
 </body>
 </html>

@@ -1,0 +1,99 @@
+.container {  
+    display: grid;
+    gap: 1%;
+    justify-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-template-areas:
+   "topper topper topper"
+   ". form ."
+   "footer footer footer";
+    }
+  
+.topper{
+    grid-area: topper;
+    width: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .form{
+    grid-area: form;
+    justify-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+.Name_Box{
+    border-style: solid dotted;
+    text-align: center;
+}
+
+.Email_Box{
+    border-style: solid dotted;
+    text-align: center;
+}
+
+.how_hear{
+    border-style: solid dotted;
+    text-align: center;
+}
+
+.Comment_Box{
+    border-style: solid dotted;
+    text-align: center;
+}
+
+.Yes_No{
+    border-style: solid dotted;
+    text-align: center;
+}
+
+.Birthday_Box{
+    text-align: center;
+    border-style: groove;
+
+}
+
+.footer{
+  grid-area: footer;
+  background-color: black;
+  width: 100%;
+  color: white;
+}
+
+@media(min-width:768px){
+  
+ 
+    .footer{
+      display: flex;
+     }
+    
+     .social-media{
+      display: flex;
+      margin-left: auto;
+      gap: 3%;
+    
+     }
+ 
+ }
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
